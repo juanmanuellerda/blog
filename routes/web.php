@@ -6,9 +6,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SaludoController;
 
 Route::controller(SaludoController::class)->group(function() {
-    Route::get('/home', 'index');
-    Route::get('/home/pagina1', 'pagina1');
-    Route::get('/home/pagina2/{mensaje?}', 'pagina2');
+    Route::get('/', 'index');
+    Route::get('/pagina1', 'pagina1');
+    Route::get('/pagina2/{mensaje?}', 'pagina2');
     });
 
 
