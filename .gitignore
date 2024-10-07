@@ -19,3 +19,5 @@ yarn-error.log
 /.idea
 /.vscode
 /.zed
+app/Http/Controllers/HomeController.php
+app/Http/Controllers/SaludoController.php
