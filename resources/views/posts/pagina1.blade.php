@@ -1,4 +1,8 @@
 <x-layout>
+    <x-slot:heading>
+        Pagina 1
+    </x-slot:heading>
+    
     <h1>Hola!!, soy la pagina 1</h1>
 </x-layout>
 
