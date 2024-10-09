@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Blog;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -12,10 +13,11 @@ use Illuminate\Support\Str;
 class BlogFactory extends Factory
 {
     protected static ?string $password;
+    protected $model = Blog::class;
     /**
      * Define the model's default state.
      *
-     * @return array<string, mixed>
+     * 
      */
     public function definition(): array
     {
