@@ -13,6 +13,16 @@ class DatabaseSeeder2 extends Seeder
      */
     public function run(): void
     {
-        Blog::factory(15)->create();
+        $blog = new Blog(); //esto lo hago para creer un usuario conocido, los demas son generados aleatoriamente por factory
+
+        $blog->nickname = 'V8';
+        $blog->name = 'Juan Manuel';
+        $blog->lastname = 'Lerda';
+        $blog->email ='jmlerda@gmail.com';
+        $blog->password =bcrypt('123456');
+    
+        $blog->save();
+
+        //Blog::factory(5)->create();
     }
 }
